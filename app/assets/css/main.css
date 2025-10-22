@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+  --font-cn: 'Noto Sans', system-ui, sans-serif;
+  --font-headings: 'Oswald', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --ui-primary: black;
+  --ui-radius: 0rem;
+}
