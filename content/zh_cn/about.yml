@@ -1,0 +1,29 @@
+seo:
+  title: 关于我
+  description: 关于我页面。
+title: 关于我
+subtitle: 电影制作人 & 摄影师
+portrait:
+  src: /portrait.png
+  alt: 头像
+bio: |
+  这是你的个人简介占位符。你可以在这里写一个关于你自己的简短介绍。谈谈你对电影制作和摄影的热情，你的经历，以及是什么驱使你创作。
+
+  请随时用你自己的个人故事替换这段文字。
+links:
+  - icon: i-simple-icons-x
+    to:
+    variant: ghost
+    target: _blank
+  - icon: i-simple-icons-instagram
+    to:
+    variant: ghost
+    target: _blank
+  - icon: i-simple-icons-vimeo
+    to:
+    variant: ghost
+    target: _blank
+  - icon: i-lucide-mail
+    to:
+    variant: ghost
+    target: _blank

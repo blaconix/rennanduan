@@ -1,16 +1,17 @@
 <script setup>
-const project = {
-  title: 'Project Title',
-  trailerUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-  synopsis: 'This is a short synopsis of the motion project. It describes the main plot and themes.',
-  credits: [
-    { role: 'Director', name: 'John Doe' },
-    { role: 'Producer', name: 'Jane Smith' },
-    { role: 'Writer', name: 'Peter Jones' },
-  ],
-  festivals: ['Sundance Film Festival', 'Cannes Film Festival'],
-  awards: ['Best Picture', 'Best Director'],
-}
+const route = useRoute()
+
+const { locale } = useI18n()
+const { data: project } = await useAsyncData(route.path, () => queryCollection(`motion_${locale.value}`).path(locale.value === 'en' ? `/en/${route.path.substring(1)}` : route.path).first(), {
+  watch: [locale],
+})
+
+useSeoMeta({
+  title: project.value?.title,
+  ogTitle: project.value?.title,
+  description: project.value?.synopsis,
+  ogDescription: project.value?.synopsis,
+})
 </script>
 
 <template>
@@ -25,7 +26,7 @@ const project = {
       <div class="space-y-8">
         <div class="aspect-video">
           <iframe
-            :src="project.trailerUrl"
+            :src="`${project.directPlayUrl}?autoplay=true&loop=false&muted=false&preload=true&responsive=true`"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -35,14 +36,13 @@ const project = {
 
         <div>
           <h2 class="text-xl font-semibold mb-2">
-            Synopsis
+            {{ $t('synopsis') }}
           </h2>
           <p>{{ project.synopsis }}</p>
         </div>
-
         <div>
           <h2 class="text-xl font-semibold mb-2">
-            Credits
+            {{ $t('credits') }}
           </h2>
           <ul>
             <li v-for="credit in project.credits" :key="credit.role">
@@ -53,23 +53,17 @@ const project = {
 
         <div>
           <h2 class="text-xl font-semibold mb-2">
-            More Info
+            {{ $t('info') }}
           </h2>
           <div class="space-y-4">
-            <div>
+            <div v-for="info in project.info" :key="info.title">
               <h3 class="font-semibold">
-                Festivals
+                {{ info.title }}
               </h3>
-              <p>{{ project.festivals.join(', ') }}</p>
+              <p>{{ info.text }}</p>
             </div>
-            <div>
-              <h3 class="font-semibold">
-                Awards
-              </h3>
-              <p>{{ project.awards.join(', ') }}</p>
-            </div>
-            <div>
-              <UButton to="#" label="Get Full Access" />
+            <div class="flex gap-2">
+              <UButton v-for="(link, index) in project.links" :key="index" v-bind="link" />
             </div>
           </div>
         </div>
