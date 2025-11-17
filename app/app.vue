@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui/locale'
 
-const { locale, setLocale, finalizePendingLocaleChange } = useI18n()
+const { locale, finalizePendingLocaleChange } = useI18n()
 
 const i18nHead = useLocaleHead()
 
@@ -24,7 +24,7 @@ async function onBeforeEnter() {
 
 <template>
   <UApp :locale="locales[locale]">
-    <UHeader :ui="{ left: 'justify-end flex-1', center: 'flex', right: 'justify-start flex-1', container: 'gap-16' }" :toggle="false">
+    <UHeader :ui="{ left: 'justify-end flex-1', center: 'flex', right: 'justify-start flex-1', container: 'gap-8 lg:gap-16' }" :toggle="false">
       <template #left>
         <UButton
           class="tracking-wider"
@@ -36,17 +36,17 @@ async function onBeforeEnter() {
         />
       </template>
 
-      <NuxtLinkLocale to="/" class="tracking-wide font-medium font-headings uppercase text-lg mb-0.5">
+      <NuxtLinkLocale to="/" class="tracking-wide font-medium font-headings uppercase text-lg mb-0.5 text-primary-500">
         Rennan Duan
       </NuxtLinkLocale>
       <template #right>
         <UButton
-          class="tracking-wider font-cn"
+          class="tracking-wider"
           color="neutral"
           variant="ghost"
-          :label="$t('lang')"
+          :to="$localePath('/blog')"
+          :label="$t('blog')"
           size="sm"
-          @click=" setLocale(locale === 'en' ? 'zh_cn' : 'en')"
         />
       </template>
     </UHeader>

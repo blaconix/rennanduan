@@ -3,11 +3,13 @@ seo:
   description: Stills page.
 stills:
   - src: /stills/detail-of-les-kralovstvi-dam-picjumbo-com.avif
+    cols: col-span-2
     alt: Alt text
   - src: /stills/cozy-alley-with-cafe-fall-atmosphere-and-fallen-autumn-leaves-picjumbo-com.avif
     alt: Alt text
   - src: /stills/cute-bichon-frise-dog-in-the-forest-picjumbo-com.avif
     alt: Alt text
+    rows: row-span-2
   - src: /stills/fairytale-park-with-spring-blossoms-on-trees-picjumbo-com.avif
     alt: Alt text
   - src: /stills/fall-still-life-with-candle-picjumbo-com.avif

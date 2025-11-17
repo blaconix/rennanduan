@@ -3,14 +3,52 @@
 
 @source "../../../content/**/*";
 
-@theme {
+@theme static {
   --font-sans: 'Source Sans 3', system-ui, sans-serif;
   --font-cn: 'Noto Sans', system-ui, sans-serif;
   --font-headings: 'Oswald', system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
+
+  --color-fog-50: #E8ECEC;   /* Text color */
+  --color-fog-100: #d1d5d5;
+  --color-fog-200: #a3a9aa;
+  --color-fog-300: #747e7e;
+  --color-fog-400: #465253;
+  --color-fog-500: #293839;
+  --color-fog-600: #212d2e;
+  --color-fog-700: #192223;
+  --color-fog-800: #121a1b;
+  --color-fog-900: #0a1112;
+  --color-fog-950: #111618;   /* Background color */
+
+  /* Custom "Sage" color palette based on #90A29A */
+  --color-sage-50: #f1f5f3;
+  --color-sage-100: #e4e9e6;
+  --color-sage-200: #cad4ce;
+  --color-sage-300: #afbfb6;
+  --color-sage-400: #93ab9e;
+  --color-sage-500: #90A29A;   /* Accent color */
+  --color-sage-600: #6b887a;
+  --color-sage-700: #51695e;
+  --color-sage-800: #3c4f45;
+  --color-sage-900: #2c3932;
+  --color-sage-950: #1a221d;
 }
 
 :root {
-  --ui-primary: black;
   --ui-radius: 0rem;
+}
+
+.dark {
+  --ui-bg: var(--ui-color-neutral-950);
+  --ui-text: var(--ui-color-neutral-50);
+  --ui-border: var(--ui-color-neutral-700)
+}
+
+.motion > div:first-child::after {
+  @apply content-[''] absolute inset-0 opacity-0 hover:opacity-100 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0)_50%,rgba(0,0,0,0.5)_75%)] backdrop-brightness-110 backdrop-contrast-125 transition-all duration-300 ease-in-out pointer-events-none;
+}
+
+.motion:hover > div:first-child::after {
+  opacity: 1;
 }

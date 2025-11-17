@@ -8,6 +8,7 @@ stills:
     alt: 替换文本
   - src: /stills/cute-bichon-frise-dog-in-the-forest-picjumbo-com.avif
     alt: 替换文本
+    cols: col-span-2
   - src: /stills/fairytale-park-with-spring-blossoms-on-trees-picjumbo-com.avif
     alt: 替换文本
   - src: /stills/fall-still-life-with-candle-picjumbo-com.avif
@@ -22,5 +23,6 @@ stills:
     alt: 替换文本
   - src: /stills/pleasant-evening-by-the-lake-with-tree-trunks-picjumbo-com.avif
     alt: 替换文本
+    rows: row-span-2
   - src: /stills/blue-butterfly-3-picjumbo-com.avif
     alt: 替换文本

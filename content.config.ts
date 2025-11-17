@@ -4,6 +4,8 @@ function createImageSchema() {
   return z.object({
     src: z.string().editor({ input: 'media' }),
     alt: z.string(),
+    cols: z.string(),
+    rows: z.string(),
   })
 }
 
@@ -43,6 +45,12 @@ const commonMotionSchema = z.object({
   links: z.array(createButtonSchema()),
 })
 
+const commonBlogSchema = z.object({
+  title: z.string().nonempty(),
+  date: z.date(),
+  description: z.string().nonempty(),
+})
+
 const commonStillSchema = z.object({
   stills: z.array(createImageSchema()),
 })
@@ -80,10 +88,17 @@ export default defineContentConfig({
       schema: commonAboutSchema,
     }),
 
+    blog_en: defineCollection({
+      type: 'page',
+      source: 'en/blog/*.md',
+      schema: commonBlogSchema,
+    }),
+
     pages_en: defineCollection({
       type: 'page',
       source: [
         { include: 'en/motion.yml' },
+        { include: 'en/blog.yml' },
       ],
     }),
 
@@ -111,10 +126,17 @@ export default defineContentConfig({
       schema: commonAboutSchema,
     }),
 
+    blog_zh_cn: defineCollection({
+      type: 'page',
+      source: 'zh_cn/blog/*.md',
+      schema: commonBlogSchema,
+    }),
+
     pages_zh_cn: defineCollection({
       type: 'page',
       source: [
         { include: 'zh_cn/motion.yml' },
+        { include: 'zh_cn/blog.yml' },
       ],
     }),
   },

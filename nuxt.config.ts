@@ -12,8 +12,9 @@ export default defineNuxtConfig({
   ],
   css: ['~/assets/css/main.css'],
 
-  ui: {
-    colorMode: false,
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
   },
 
   content: {
@@ -51,7 +52,7 @@ export default defineNuxtConfig({
       routes: [
         '/',
       ],
-      crawlLinks: true,
+      // crawlLinks: true,
       autoSubfolderIndex: false,
     },
 

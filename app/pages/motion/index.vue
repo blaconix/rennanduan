@@ -27,7 +27,7 @@ useSeoMeta({
           :transition="{ delay: 0.2 * index }"
           :in-view-options="{ once: true }"
         >
-          <UBlogPost :title="motion.title" :to="$localePath(motion.path)" :image="motion.thumbnailUrl" />
+          <UBlogPost :ui="{ root: 'motion pointer-events-auto' }" :title="motion.title" :to="$localePath(motion.path.replace('/en', ''))" :image="motion.thumbnailUrl" />
         </Motion>
       </UBlogPosts>
     </UPageSection>

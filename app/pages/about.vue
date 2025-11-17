@@ -20,6 +20,7 @@ useSeoMeta({
           :src="page.portrait.src"
           :alt="page.portrait.alt"
           class="mb-8"
+          :width="250"
         />
 
         <p class="text-gray-500 dark:text-gray-400">

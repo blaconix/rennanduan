@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale, setLocale } = useI18n()
 const { data: page } = await useAsyncData('index', async () => queryCollection(`index_${locale.value}`).first(), {
   watch: [locale],
 })
@@ -13,28 +13,43 @@ useSeoMeta({
 </script>
 
 <template>
-  <UPageHero v-if="page" :ui="{ links: 'gap-24' }">
+  <UPageHero v-if="page" class="dark" :ui="{ container: 'py-12 sm:py-16', links: 'gap-16 lg:gap-24' }">
     <template #links>
-      <UButton square class="dark transition-all hover:scale-105 group flex-col text-lg tracking-wider" :to="$localePath('/motion')">
-        <div class="relative">
-          <img class="max-w-md" :src="page.hero.motion.src" :alt="page.hero.motion.alt">
-          <div class="absolute -top-4 -left-4 w-16 h-16 border-t border-l border-default" />
-          <!-- <div class="absolute -top-4 -right-4 w-16 h-16 border-t border-r border-black" /> -->
-          <!-- <div class="absolute -bottom-4 -left-4 w-16 h-16 border-b border-l border-black" /> -->
-          <div class="absolute -bottom-4 -right-4 w-16 h-16 border-b border-r border-default" />
-        </div>
-        <span class="mt-4 uppercase">{{ $t('motion') }}</span>
-      </UButton>
-      <UButton square class="dark transition-all hover:scale-105 group flex-col text-lg tracking-wider" :to="$localePath('/still')">
-        <div class="relative">
-          <img class="max-w-md" :src="page.hero.still.src" :alt="page.hero.still.alt">
-          <div class="absolute -top-4 -left-4 w-16 h-16 border-t border-l border-default" />
-          <!-- <div class="absolute -top-4 -right-4 w-16 h-16 border-t border-r border-black" /> -->
-          <!-- <div class="absolute -bottom-4 -left-4 w-16 h-16 border-b border-l border-black" /> -->
-          <div class="absolute -bottom-4 -right-4 w-16 h-16 border-b border-r border-default" />
-        </div>
-        <span class="mt-4 uppercase">{{ $t('still') }}</span>
-      </UButton>
+      <div class="flex flex-col group">
+        <UPageCard class="motion overflow-hidden" square variant="naked" :to="$localePath('/motion')">
+          <img class="max-w-[80vw] lg:max-w-md transition-transform group-hover:scale-110" :src="page.hero.motion.src" :alt="page.hero.motion.alt">
+        </UPageCard>
+        <NuxtLink :to="$localePath('/motion')" class="mt-4 uppercase text-lg tracking-wider font-medium">
+          {{ $t('motion') }}
+        </NuxtLink>
+      </div>
+      <!-- <div class="absolute -top-4 -left-4 w-4 h-4 bg-black" /> -->
+      <!-- <div class="absolute -bottom-4 -right-4 w-4 h-4 bg-black" /> -->
+      <!-- <div class="absolute -top-4 -left-4 w-full h-full border-t-2 border-l border-dashed border-default" /> -->
+      <!-- <div class="absolute -top-4 -right-4 w-16 h-16 border-t border-r border-black" /> -->
+      <!-- <div class="absolute -bottom-4 -left-4 w-16 h-16 border-b border-l border-black" /> -->
+      <!-- <div class="absolute -bottom-4 -right-4 w-16 h-16 border-b border-r border-dashed border-default" /> -->
+      <div class="flex flex-col transition-transform hover:scale-105">
+        <UPageCard square variant="naked" :to="$localePath('/still')">
+          <img class="max-w-[80vw] lg:max-w-md" :src="page.hero.still.src" :alt="page.hero.still.alt">
+        </UPageCard>
+        <NuxtLink :to="$localePath('/still')" class="mt-4 uppercase text-lg tracking-wider font-medium">
+          {{ $t('still') }}
+        </NuxtLink>
+      </div>
+    </template>
+
+    <template #bottom>
+      <div class="flex justify-center mt-4">
+        <UButton
+          class="tracking-wider font-cn"
+          color="neutral"
+          variant="outline"
+          :label="$t('lang')"
+          size="sm"
+          @click="setLocale(locale === 'en' ? 'zh_cn' : 'en')"
+        />
+      </div>
     </template>
   </UPageHero>
 </template>

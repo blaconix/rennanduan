@@ -3,7 +3,7 @@ const route = useRoute()
 
 const { locale } = useI18n()
 const { data: project } = await useAsyncData(route.path, () => queryCollection(`motion_${locale.value}`).path(locale.value === 'en' ? `/en/${route.path.substring(1)}` : route.path).first(), {
-  watch: [locale],
+  watch: [locale, route],
 })
 
 useSeoMeta({
@@ -16,7 +16,7 @@ useSeoMeta({
 
 <template>
   <UContainer>
-    <UCard>
+    <UCard v-if="project">
       <template #header>
         <h1 class="text-2xl font-bold">
           {{ project.title }}
@@ -26,7 +26,7 @@ useSeoMeta({
       <div class="space-y-8">
         <div class="aspect-video">
           <iframe
-            :src="`${project.directPlayUrl}?autoplay=true&loop=false&muted=false&preload=true&responsive=true`"
+            :src="`${project.directPlayUrl}?autoplay=false&loop=false&muted=false&preload=true&responsive=true`"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
