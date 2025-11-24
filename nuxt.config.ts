@@ -59,6 +59,7 @@ export default defineNuxtConfig({
   },
 
   image: {
+    provider: 'bunny',
     bunny: {
       baseURL: 'https://rennanduan.b-cdn.net'
     }
