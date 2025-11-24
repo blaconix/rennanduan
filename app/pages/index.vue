@@ -17,7 +17,7 @@ useSeoMeta({
     <template #links>
       <div class="flex flex-col group">
         <UPageCard class="motion overflow-hidden" square variant="naked" :to="$localePath('/motion')">
-          <img class="max-w-[80vw] lg:max-w-md transition-transform group-hover:scale-110" :src="page.hero.motion.src" :alt="page.hero.motion.alt">
+          <NuxtImg :width="500" class="max-w-[80vw] lg:max-w-md transition-transform group-hover:scale-110" :src="page.hero.motion.src" :alt="page.hero.motion.alt" />
         </UPageCard>
         <NuxtLink :to="$localePath('/motion')" class="mt-4 uppercase text-lg tracking-wider font-medium">
           {{ $t('motion') }}
@@ -31,7 +31,7 @@ useSeoMeta({
       <!-- <div class="absolute -bottom-4 -right-4 w-16 h-16 border-b border-r border-dashed border-default" /> -->
       <div class="flex flex-col transition-transform hover:scale-105">
         <UPageCard square variant="naked" :to="$localePath('/still')">
-          <img class="max-w-[80vw] lg:max-w-md" :src="page.hero.still.src" :alt="page.hero.still.alt">
+          <NuxtImg :width="500" class="max-w-[80vw] lg:max-w-md" :src="page.hero.still.src" :alt="page.hero.still.alt" />
         </UPageCard>
         <NuxtLink :to="$localePath('/still')" class="mt-4 uppercase text-lg tracking-wider font-medium">
           {{ $t('still') }}
