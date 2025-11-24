@@ -17,7 +17,7 @@ useSeoMeta({
     <template #links>
       <div class="flex flex-col group">
         <UPageCard class="motion overflow-hidden" square variant="naked" :to="$localePath('/motion')">
-          <NuxtImg :width="500" class="max-w-[80vw] lg:max-w-md transition-transform group-hover:scale-110" :src="page.hero.motion.src" :alt="page.hero.motion.alt" />
+          <img :width="500" class="max-w-[80vw] lg:max-w-md transition-transform group-hover:scale-110" :src="page.hero.motion.src" :alt="page.hero.motion.alt">
         </UPageCard>
         <NuxtLink :to="$localePath('/motion')" class="mt-4 uppercase text-lg tracking-wider font-medium">
           {{ $t('motion') }}
