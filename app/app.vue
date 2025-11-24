@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import * as locales from '@nuxt/ui/locale'
 
-const { locale, finalizePendingLocaleChange } = useI18n()
+const { locale, finalizePendingLocaleChange, t } = useI18n()
 
 const i18nHead = useLocaleHead()
 
@@ -14,7 +14,7 @@ useHead(() => ({
 }))
 
 useSeoMeta({
-  titleTemplate: '%s - Rennan Duan',
+  titleTemplate: `%s - ${t("rennan")}`,
 })
 
 async function onBeforeEnter() {
@@ -37,7 +37,7 @@ async function onBeforeEnter() {
       </template>
 
       <NuxtLinkLocale to="/" class="tracking-wide font-medium font-headings uppercase text-lg mb-0.5 text-primary-500">
-        Rennan Duan
+        {{ $t("rennan") }}
       </NuxtLinkLocale>
       <template #right>
         <UButton

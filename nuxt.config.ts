@@ -9,12 +9,19 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     'motion-v/nuxt',
     '@nuxt/image',
+    'nuxt-studio',
   ],
   css: ['~/assets/css/main.css'],
 
   colorMode: {
     preference: 'dark',
     fallback: 'dark',
+  },
+
+  eslint: {
+    config: {
+      standalone: false,
+    },
   },
 
   content: {
@@ -41,9 +48,12 @@ export default defineNuxtConfig({
     skipSettingLocaleOnNavigate: true,
   },
 
-  eslint: {
-    config: {
-      standalone: false,
+  studio: {
+    repository: {
+      provider: 'github',
+      owner: 'blaconix',
+      repo: 'rennanduan',
+      branch: 'main',
     },
   },
 
@@ -52,7 +62,7 @@ export default defineNuxtConfig({
       routes: [
         '/',
       ],
-      // crawlLinks: true,
+      crawlLinks: true,
       autoSubfolderIndex: false,
     },
 
@@ -64,8 +74,8 @@ export default defineNuxtConfig({
         d1_databases: [
           {
             binding: 'DB',
-            database_name: 'portfolio-test-db',
-            database_id: '65c92032-40cd-4138-9269-81f34c1feef2',
+            database_name: 'rennanduan',
+            database_id: '105fb714-7634-44b1-9268-cbd883568c80',
           },
         ],
       },
