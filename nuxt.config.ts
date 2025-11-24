@@ -85,6 +85,10 @@ export default defineNuxtConfig({
             database_id: '105fb714-7634-44b1-9268-cbd883568c80',
           },
         ],
+        vars: {
+          "STUDIO_GITHUB_CLIENT_ID": "Ov23liRKhwkz4TnYu2CN",
+          "STUDIO_GITHUB_CLIENT_SECRET": "82d321c05d325ea0747df7cb3640c3ca3544d3b9",
+        }
       },
     },
   },
