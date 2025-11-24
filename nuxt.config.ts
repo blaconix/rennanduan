@@ -58,6 +58,12 @@ export default defineNuxtConfig({
     },
   },
 
+  image: {
+    bunny: {
+      baseURL: 'https://rennanduan.b-cdn.net'
+    }
+  },
+
   nitro: {
     prerender: {
       routes: [
