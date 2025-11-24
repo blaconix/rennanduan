@@ -25,6 +25,7 @@ export default defineNuxtConfig({
   },
 
   content: {
+    experimental: { sqliteConnector: 'native' },
     database: {
       type: 'd1',
       bindingName: 'DB',
