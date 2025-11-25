@@ -45,6 +45,7 @@ export default defineNuxtConfig({
       file: 'zh_cn.json',
     }],
     defaultLocale: 'en',
+    strategy: 'prefix_and_default',
     baseUrl: 'https://rennanduan.com',
     skipSettingLocaleOnNavigate: true,
   },
