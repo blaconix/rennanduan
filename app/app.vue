@@ -14,7 +14,7 @@ useHead(() => ({
 }))
 
 useSeoMeta({
-  titleTemplate: `%s - ${t("rennan")}`,
+  titleTemplate: `%s - ${t('rennan')}`,
 })
 
 async function onBeforeEnter() {

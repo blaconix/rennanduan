@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 const { locale } = useI18n()
-const { data: page } = await useAsyncData('motion-page', async () => queryCollection(`pages_${locale.value}`).first(), {
+const { data: page } = await useAsyncData(`motion-page-${locale.value}`, async () => queryCollection(`pages_${locale.value}`).first(), {
   watch: [locale],
 })
 
-const { data } = await useAsyncData('motion', async () => queryCollection(`motion_${locale.value}`).order('date', 'DESC').all(), {
+const { data } = await useAsyncData(`motion-${locale.value}`, async () => queryCollection(`motion_${locale.value}`).order('date', 'DESC').all(), {
   watch: [locale],
 })
 

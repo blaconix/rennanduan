@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { locale } = useI18n()
-const { data: page } = await useAsyncData('about', async () => queryCollection(`about_${locale.value}`).first(), {
+const { data: page } = await useAsyncData(`about-${locale.value}`, async () => queryCollection(`about_${locale.value}`).first(), {
   watch: [locale],
 })
 

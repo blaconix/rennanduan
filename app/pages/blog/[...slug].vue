@@ -2,7 +2,7 @@
 const route = useRoute()
 
 const { locale, localeProperties } = useI18n()
-const { data: page } = await useAsyncData(route.path, () => queryCollection(`blog_${locale.value}`).path(locale.value === 'en' ? `/en/${route.path.substring(1)}` : route.path).first(), {
+const { data: page } = await useAsyncData(`blog-post-${route.path}`, () => queryCollection(`blog_${locale.value}`).path(locale.value === 'en' ? `/en/${route.path.substring(1)}` : route.path).first(), {
   watch: [locale, route],
 })
 

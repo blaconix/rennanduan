@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const { locale, setLocale } = useI18n()
-const { data: page } = await useAsyncData('index', async () => queryCollection(`index_${locale.value}`).first(), {
+const { data: page } = await useAsyncData(`index-${locale.value}`, async () => queryCollection(`index_${locale.value}`).first(), {
   watch: [locale],
 })
 

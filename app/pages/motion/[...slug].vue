@@ -2,7 +2,7 @@
 const route = useRoute()
 
 const { locale } = useI18n()
-const { data: project } = await useAsyncData(route.path, () => queryCollection(`motion_${locale.value}`).path(locale.value === 'en' ? `/en/${route.path.substring(1)}` : route.path).first(), {
+const { data: project } = await useAsyncData(`motion-post-${route.path}`, () => queryCollection(`motion_${locale.value}`).path(locale.value === 'en' ? `/en/${route.path.substring(1)}` : route.path).first(), {
   watch: [locale, route],
 })
 
