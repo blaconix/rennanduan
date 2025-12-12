@@ -1,8 +1,4 @@
-title: Big Buck Bunny
-date: 2025-10-25
-directPlayUrl: https://player.mediadelivery.net/embed/541624/5b7e3d40-4c3c-4328-be4c-062bae3b8be8
-thumbnailUrl: https://vz-3794f74f-ea6.b-cdn.net/5b7e3d40-4c3c-4328-be4c-062bae3b8be8/thumbnail.jpg
-synopsis: This is a short synopsis of the motion project. It describes the main plot and themes.
+title: Big Buck Bunny TEST
 credits:
   - role: Director
     name: John Doe
@@ -10,6 +6,8 @@ credits:
     name: Jane Smith
   - role: Writer
     name: Peter Jones
+date: 2025-10-25T00:00:00.000Z
+directPlayUrl: https://player.mediadelivery.net/embed/541624/5b7e3d40-4c3c-4328-be4c-062bae3b8be8
 info:
   - title: Festivals
     text: Sundance Film Festival, Cannes Film Festival
@@ -17,4 +15,6 @@ info:
     text: Best Picture, Best Director
 links:
   - label: Get Full Access
-    to: #
+    to: null
+synopsis: This is a short synopsis of the motion project. It describes the main plot and themes.
+thumbnailUrl: https://vz-3794f74f-ea6.b-cdn.net/5b7e3d40-4c3c-4328-be4c-062bae3b8be8/thumbnail.jpg
