@@ -1,29 +1,29 @@
-seo:
-  title: About Me
-  description: About me page.
-title: About Me
-subtitle: Filmmaker & Photographer
-portrait:
-  src: /portrait.png
-  alt: Portrait alt
+title: About Me Test
 bio: |
   This is a placeholder for your bio. You can write a short introduction about yourself here. Talk about your passion for filmmaking and photography, your experience, and what drives you to create.
 
   Feel free to replace this text with your own personal story.
 links:
   - icon: i-simple-icons-x
-    to:
+    to: null
     variant: ghost
     target: _blank
   - icon: i-simple-icons-instagram
-    to:
+    to: null
     variant: ghost
     target: _blank
   - icon: i-simple-icons-vimeo
-    to:
+    to: null
     variant: ghost
     target: _blank
   - icon: i-lucide-mail
-    to:
+    to: null
     variant: ghost
     target: _blank
+portrait:
+  src: /portrait.png
+  alt: Portrait alt
+seo:
+  title: About Me
+  description: About me page.
+subtitle: Filmmaker & Photographer
