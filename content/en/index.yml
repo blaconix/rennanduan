@@ -1,10 +1,10 @@
+seo:
+  title: Portfolio
+  description: Welcome to my portfolio! Have a nice stay.
 hero:
   motion:
     src: /motion.avif
     alt: Motion alt
   still:
-    src: /test.jpg
-    alt: Same here, it's a thumbnail
-seo:
-  title: Portfolio
-  description: Welcome to my portfolio! Have a nice stay.
+    src: /still.avif
+    alt: Still alt
