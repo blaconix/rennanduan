@@ -16,17 +16,15 @@
     "@nuxt/image": "2.0.0",
     "@nuxt/ui": "^4.2.1",
     "@nuxtjs/i18n": "^10.2.1",
-    "gsap": "^3.13.0",
     "minimatch": "^10.1.1",
     "motion-v": "^1.7.2",
     "nuxt": "^4.2.2",
-    "nuxt-studio": "^1.0.0-alpha.4",
+    "nuxt-studio": "https://pkg.pr.new/blaconix/studio/nuxt-studio@0ae2be5",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.6.1",
     "@nuxt/eslint": "1.12.1",
-    "eslint": "^9.39.1",
-    "wrangler": "^4.50.0"
+    "eslint": "^9.39.1"
   }
 }
