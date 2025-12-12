@@ -1,9 +1,8 @@
-title: Still
 seo:
   title: Still
   description: Stills page.
 stills:
-  - src: /stills/test.jpg
+  - src: /stills/detail-of-les-kralovstvi-dam-picjumbo-com.avif
     cols: col-span-2
     alt: Alt text
   - src: /stills/cozy-alley-with-cafe-fall-atmosphere-and-fallen-autumn-leaves-picjumbo-com.avif
