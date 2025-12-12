@@ -26,10 +26,6 @@ export default defineNuxtConfig({
 
   content: {
     experimental: { sqliteConnector: 'native' },
-    // database: {
-    //   type: 'd1',
-    //   bindingName: 'DB',
-    // },
   },
 
   i18n: {
@@ -60,7 +56,7 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: 'ipxStatic',
+    provider: 'ipx',
   },
 
   nitro: {
@@ -71,24 +67,5 @@ export default defineNuxtConfig({
       crawlLinks: true,
       autoSubfolderIndex: false,
     },
-
-    // preset: 'cloudflare_module',
-    // cloudflare: {
-    //   deployConfig: true,
-    //   nodeCompat: true,
-    //   wrangler: {
-    //     d1_databases: [
-    //       {
-    //         binding: 'DB',
-    //         database_name: 'rennanduan',
-    //         database_id: '105fb714-7634-44b1-9268-cbd883568c80',
-    //       },
-    //     ],
-    //     vars: {
-    //       "STUDIO_GITHUB_CLIENT_ID": "Ov23liRKhwkz4TnYu2CN",
-    //       "STUDIO_GITHUB_CLIENT_SECRET": "82d321c05d325ea0747df7cb3640c3ca3544d3b9",
-    //     }
-    //   },
-    // },
   },
 })
