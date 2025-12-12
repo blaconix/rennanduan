@@ -33,16 +33,6 @@ const commonMotionSchema = z.object({
   directPlayUrl: z.string().nonempty(),
   thumbnailUrl: z.string().nonempty(),
   date: z.date(),
-  synopsis: z.string().nonempty(),
-  credits: z.array(z.object({
-    role: z.string(),
-    name: z.string(),
-  })),
-  info: z.array(z.object({
-    title: z.string(),
-    text: z.string(),
-  })),
-  links: z.array(createButtonSchema()),
 })
 
 const commonBlogSchema = z.object({
@@ -72,7 +62,7 @@ export default defineContentConfig({
 
     motion_en: defineCollection({
       type: 'page',
-      source: 'en/motion/*.yml',
+      source: 'en/motion/*.md',
       schema: commonMotionSchema,
     }),
 
@@ -110,7 +100,7 @@ export default defineContentConfig({
 
     motion_zh_cn: defineCollection({
       type: 'page',
-      source: 'zh_cn/motion/*.yml',
+      source: 'zh_cn/motion/*.md',
       schema: commonMotionSchema,
     }),
 

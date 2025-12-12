@@ -23,7 +23,7 @@ useSeoMeta({
         </h1>
       </template>
 
-      <div class="space-y-8">
+      <div>
         <div class="aspect-video">
           <iframe
             :src="`${project.directPlayUrl}?autoplay=false&loop=false&muted=false&preload=true&responsive=true`"
@@ -34,39 +34,10 @@ useSeoMeta({
           />
         </div>
 
-        <div>
-          <h2 class="text-xl font-semibold mb-2">
-            {{ $t('synopsis') }}
-          </h2>
-          <p>{{ project.synopsis }}</p>
-        </div>
-        <div>
-          <h2 class="text-xl font-semibold mb-2">
-            {{ $t('credits') }}
-          </h2>
-          <ul>
-            <li v-for="credit in project.credits" :key="credit.role">
-              <strong>{{ credit.role }}:</strong> {{ credit.name }}
-            </li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="text-xl font-semibold mb-2">
-            {{ $t('info') }}
-          </h2>
-          <div class="space-y-4">
-            <div v-for="info in project.info" :key="info.title">
-              <h3 class="font-semibold">
-                {{ info.title }}
-              </h3>
-              <p>{{ info.text }}</p>
-            </div>
-            <div class="flex gap-2">
-              <UButton v-for="(link, index) in project.links" :key="index" v-bind="link" />
-            </div>
-          </div>
-        </div>
+        <ContentRenderer
+          v-if="project.body"
+          :value="project"
+        />
       </div>
     </UCard>
   </UContainer>
