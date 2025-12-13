@@ -1,29 +1,30 @@
-seo:
-  title: 关于我
-  description: 关于我页面。
-title: 关于我
-subtitle: 电影制作人 & 摄影师
-portrait:
-  src: /portrait.png
-  alt: 头像
+title: 工作版本的我：
 bio: |
-  这是你的个人简介占位符。你可以在这里写一个关于你自己的简短介绍。谈谈你对电影制作和摄影的热情，你的经历，以及是什么驱使你创作。
-
-  请随时用你自己的个人故事替换这段文字。
+  长居于伦敦和中国的人文艺术从业者，我的工作流动于纪录片、民族志、表演与研究等多媒介之间。
+  在聚焦但不局限于乡村向城市转型的文化或空间语境中，我持续探索跨文化、神话、女性、少数群体与自然环境等相关议题。
+  我相信纪录无需视拍摄对象为项目，我喜爱用好奇、坚韧、尊重的态度去讲述那些与生活等重的故事。
+  如有任何现在或潜在的合作机会，欢迎随时联系！
 links:
   - icon: i-simple-icons-x
-    to:
+    to: null
     variant: ghost
     target: _blank
   - icon: i-simple-icons-instagram
-    to:
+    to: null
     variant: ghost
     target: _blank
   - icon: i-simple-icons-vimeo
-    to:
+    to: null
     variant: ghost
     target: _blank
   - icon: i-lucide-mail
-    to:
+    to: null
     variant: ghost
     target: _blank
+portrait:
+  src: /portrait.png
+  alt: 头像
+seo:
+  title: 关于我
+  description: 关于我页面。
+subtitle: 我的镜头会因错失美景而感到遗憾，所以这是那个背着额外的镜头负重徒步或攀岩的我
