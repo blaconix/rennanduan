@@ -4,20 +4,12 @@ bio: |
   I am interested in rural change, queer and female experiences, nature, mythology, cross-cultrual comparison and much more. I dislike viewing beings as projects. I approach images with curiosity, persistence and a deep respect for the stories that shape lives.
   Feel free to contact me if you think there is any possibility for collaboration now or in the future.
 links:
-  - icon: i-simple-icons-x
-    to: null
-    variant: ghost
-    target: _blank
-  - icon: i-simple-icons-instagram
-    to: null
-    variant: ghost
-    target: _blank
   - icon: i-simple-icons-vimeo
-    to: null
+    to: https://vimeo.com/user227771493?fl=pp&fe=sh
     variant: ghost
     target: _blank
   - icon: i-lucide-mail
-    to: null
+    to: mailto:duan_rennan@outlook.com
     variant: ghost
     target: _blank
 portrait:

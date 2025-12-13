@@ -5,20 +5,12 @@ bio: |
   我相信纪录无需视拍摄对象为项目，我喜爱用好奇、坚韧、尊重的态度去讲述那些与生活等重的故事。
   如有任何现在或潜在的合作机会，欢迎随时联系！
 links:
-  - icon: i-simple-icons-x
-    to: null
-    variant: ghost
-    target: _blank
-  - icon: i-simple-icons-instagram
-    to: null
-    variant: ghost
-    target: _blank
   - icon: i-simple-icons-vimeo
-    to: null
+    to: https://vimeo.com/user227771493?fl=pp&fe=sh
     variant: ghost
     target: _blank
   - icon: i-lucide-mail
-    to: null
+    to: mailto:duan_rennan@outlook.com
     variant: ghost
     target: _blank
 portrait:
@@ -27,4 +19,4 @@ portrait:
 seo:
   title: 关于我
   description: 关于我页面。
-subtitle: 我的镜头会因错失美景而感到遗憾，这是那个背着额外的镜头负重徒步或攀岩的我
+subtitle: 我的快门会因错失美景而感到遗憾，这是那个背着额外的镜头负重徒步或攀岩的我
