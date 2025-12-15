@@ -13,7 +13,7 @@ links:
     variant: ghost
     target: _blank
 portrait:
-  src: /portrait.png
+  src: /Rona-portrait.jpg
   alt: Portrait alt
 seo:
   title: About me
