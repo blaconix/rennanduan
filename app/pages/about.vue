@@ -23,7 +23,7 @@ useSeoMeta({
           :width="250"
         />
 
-        <p class="text-gray-500 dark:text-gray-400">
+        <p class="text-gray-500 dark:text-gray-400 whitespace-break-spaces">
           {{ page.subtitle }}
         </p>
       </div>
