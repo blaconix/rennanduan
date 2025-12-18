@@ -1,28 +1,29 @@
+title: 静态影像
 seo:
   title: 静态影像
   description: 静态影像页面。
 stills:
-  - src: /stills/detail-of-les-kralovstvi-dam-picjumbo-com.avif
-    alt: 替换文本
-  - src: /stills/cozy-alley-with-cafe-fall-atmosphere-and-fallen-autumn-leaves-picjumbo-com.avif
-    alt: 替换文本
-  - src: /stills/cute-bichon-frise-dog-in-the-forest-picjumbo-com.avif
-    alt: 替换文本
+  - src: /stills/under-snow.jpg
     cols: col-span-2
-  - src: /stills/fairytale-park-with-spring-blossoms-on-trees-picjumbo-com.avif
-    alt: 替换文本
-  - src: /stills/fall-still-life-with-candle-picjumbo-com.avif
-    alt: 替换文本
-  - src: /stills/forest-path-in-summer-nature-picjumbo-com.avif
-    alt: 替换文本
-  - src: /stills/free-tropical-backgrounds-palm-leaves-with-space-for-text-picjumbo-com.avif
-    alt: 替换文本
-  - src: /stills/minimalist-photo-of-a-boat-in-the-middle-of-a-lake-picjumbo-com.avif
-    alt: 替换文本
-  - src: /stills/mysterious-glowing-circle-in-the-middle-of-the-forest-picjumbo-com.avif
-    alt: 替换文本
-  - src: /stills/pleasant-evening-by-the-lake-with-tree-trunks-picjumbo-com.avif
-    alt: 替换文本
+    alt: Alt text
+  - src: /stills/crane.jpg
+    alt: Alt text
+  - src: /stills/hello.jpg
+    alt: Alt text
     rows: row-span-2
-  - src: /stills/blue-butterfly-3-picjumbo-com.avif
-    alt: 替换文本
+  - src: /stills/windoe-view.jpg
+    alt: Alt text
+  - src: /stills/eye-of-unicorn.jpg
+    alt: Alt text
+  - src: /stills/fountain.jpg
+    alt: Alt text
+  - src: /stills/two.jpg
+    alt: Alt text
+  - src: /stills/london.jpg
+    alt: Alt text
+  - src: /stills/factorynew.jpg
+    alt: Alt text
+  - src: /stills/cold.jpg
+    alt: Alt text
+  - src: /stills/flying-ego.jpg
+    alt: Alt text
