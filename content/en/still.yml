@@ -8,12 +8,7 @@ stills:
     alt: Alt text
   - src: /stills/crane.jpg
     alt: Alt text
-  - src: /stills/hello.jpg
-    alt: Alt text
-    rows: row-span-2
   - src: /stills/windoe-view.jpg
-    alt: Alt text
-  - src: /stills/eye-of-unicorn.jpg
     alt: Alt text
   - src: /stills/fountain.jpg
     alt: Alt text
@@ -23,7 +18,98 @@ stills:
     alt: Alt text
   - src: /stills/factorynew.jpg
     alt: Alt text
+    cols: col-span-2
   - src: /stills/cold.jpg
     alt: Alt text
+    cols: col-span-2
   - src: /stills/flying-ego.jpg
+    alt: Alt text
+    cols: col-span-2
+  - src: /stills/eye-of-unicorn.jpg
+    alt: Alt text
+    cols: col-span-1
+    rows: row-span-1
+  - src: /stills/3-horses.jpg
+    alt: Alt text
+  - src: /stills/Asteria.jpg
+    alt: Alt text
+  - src: /stills/Happy.jpg
+    alt: Alt text
+  - src: /stills/Wind-Turbine.jpg
+    alt: Alt text
+  - src: /stills/ad-of-hiking.jpg
+    alt: Alt text
+  - src: /stills/birdsroof.jpg
+    alt: Alt text
+  - src: /stills/birdzhizhi.jpg
+    alt: Alt text
+  - src: /stills/bouldering.jpg
+    alt: Alt text
+  - src: /stills/burnt.jpg
+    alt: Alt text
+  - src: /stills/end-of-work.jpg
+    alt: Alt text
+  - src: /stills/excavator.jpg
+    alt: Alt text
+  - src: /stills/family.jpg
+    alt: Alt text
+  - src: /stills/farming-still-framenew.jpg
+    alt: Alt text
+  - src: /stills/flowers-and-butterfly.jpg
+    alt: Alt text
+  - src: /stills/fluffy.jpg
+    alt: Alt text
+  - src: /stills/foggyrailway.png
+    alt: Alt text
+  - src: /stills/glance.jpg
+    alt: Alt text
+  - src: /stills/goats-2.jpg'
+    alt: Alt text
+  - src: /stills/guguga.jpg
+    alt: Alt text
+  - src: /stills/hiding-but-failed.jpg
+    alt: Alt text
+  - src: stills/hml.jpg
+    alt: Alt text
+  - src: /stills/hmll.jpg
+    alt: Alt text
+  - src: /stills/holiday.jpg
+    alt: Alt text
+  - src: /stills/home-gym.jpg
+    alt: Alt text
+  - src: /stills/insect.jpg
+    alt: Alt text
+  - src: /stills/lover.jpg
+    alt: Alt text
+  - src: /stills/md.jpg
+    alt: Alt text
+  - src: /stills/me.jpg
+    alt: Alt text
+  - src: /stills/mountain-and-cloud.jpg
+    alt: Alt text
+  - src: /stills/mountain-goat.jpg
+    alt: Alt text
+  - src: /stills/parent-and-child.jpg
+    alt: Alt text
+  - src: /stills/sis.jpg
+    alt: Alt text
+  - src: /stills/sunset-in-BJ.jpg
+    alt: Alt text
+  - src: /stills/sunset-in-hills.jpg
+    alt: Alt text
+  - src: /stills/swan.jpg
+    alt: Alt text
+  - src: /stills/tinder-profile.jpg
+    alt: Alt text
+  - src: /stills/train.jpg
+    alt: Alt text
+  - src: /stills/tree-employment.jpg
+    alt: Alt text
+  - src: /stills/true-goat-and-bird.jpg
+    alt: Alt text
+  - src: /stills/true-goat.jpg
+    alt: Alt text
+  - src: /stills/unicorn.jpg
+    alt: Alt text
+  - src: /stills/zhizhi.jpg
     alt: Alt text
