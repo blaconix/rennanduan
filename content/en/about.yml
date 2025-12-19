@@ -1,23 +1,18 @@
 title: One of my work selves
-bio: |
-  I am a London and China based filmmaker whose work drifts between documentary, performance, ethnography, and research.
-  I am interested in rural change, queer and female experiences, nature, mythology, cross-cultrual comparison and much more. I dislike viewing beings as projects. I approach images with curiosity, persistence and a deep respect for the stories that shape lives.
-  Feel free to contact me if you think there is any possibility for collaboration now or in the future.
+bio: I am a London and China based filmmaker whose work drifts between documentary, performance, ethnography and research. I am interested in rural change, queer and female experiences, nature, cross-cultrual comparison and much more. I dislike viewing beings as projects. I approach images with curiosity, persistence and a deep respect for the stories that shape lives. Feel free to contact me if you think there is any possibility for collaboration now or in the future.
 links:
-  - icon: i-simple-icons-vimeo
-    to: https://vimeo.com/user227771493?fl=pp&fe=sh
+  - icon: i-simple-icons-instagram
+    to: instagram.com
     variant: ghost
     target: _blank
   - icon: i-lucide-mail
-    to: mailto:duan_rennan@outlook.com
+    to: null
     variant: ghost
     target: _blank
 portrait:
-  src: /rona-herself.jpg
+  src: /portrait.png
   alt: Portrait alt
 seo:
-  title: About me
+  title: About Me
   description: About me page.
-subtitle: |
-  This is me, hiking and climbing with extra lenses, because my shutter
-  refuses to miss a moment.
+subtitle: This is me, attempting to seek inspiration for docs, but always finding myself communicating with cliffs instead (and eventually developing good ideas).
